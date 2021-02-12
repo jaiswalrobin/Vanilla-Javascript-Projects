@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Meal FInder</title>
+  </head>
+  <body>
+    <h1>Welcome to Meal Finder</h1>
+    <p>Search your delicacies here😋</p>
+    <div class="meal-search">
+      <input
+        type="text"
+        placeholder="Enter name of meal here or any keyword"
+        id="meal-find"
+      />
+      <button id="search">
+        <i class="fa fa-search icon"></i>
+      </button>
+      <button id="random-meal-btn">
+        <i class="fa fa-random icon"></i>
+      </button>
+    </div>
+    <div class="meal-category">
+      <p>
+        Choose your favourite meals from different categories or search by name
+      </p>
+      <p>Select different categories from our large kitchen</p>
+      <div class="dropdown">
+        <ul class="submenu" id="submenu">
+          <li class="categoryli">Here are the Categories:</li>
+        </ul>
+      </div>
+    </div>
+    <p class="search-results" id="search-results"></p>
+    <div class="meal-container" id="search-meal">
+      <div class="meal-img-container" id="meal-info-container"></div>
+      <div class="single-meal-details" id="single-meal-details"></div>
+      <div class="random-meal" id="random-meal"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
