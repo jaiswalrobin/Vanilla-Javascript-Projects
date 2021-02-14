@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eee;
+}
+
+.income-box {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.1);
+}
+h4,
+h2,
+h3 {
+  margin: 4px;
+}
+.net-income {
+  text-align: center;
+  width: 150px;
+  border-right: 2px solid rgb(58, 57, 57, 0.2);
+}
+.net-expense {
+  text-align: center;
+  width: 150px;
+}
+
+.history {
+  margin: 21px 0 0 0;
+}
+.history p {
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+}
+
+label {
+  margin: 15px 0 5px;
+  display: block;
+}
+input[type="text"] {
+  padding: 7px;
+  width: 100%;
+
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1.4px solid #454545;
+}
+input[type="text"]:focus {
+  outline: none;
+  border-color: blueviolet;
+}
+.transaction-btn {
+  width: 100%;
+  color: #fff;
+  background-color: blueviolet;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.minus {
+  position: relative;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px 1px rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: space-between;
+  margin: 8px;
+  border-right: 4px solid rgba(255, 7, 7, 0.705);
+}
+.plus {
+  position: relative;
+  margin: 8px;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px 1px rgb(0 0 0 / 10%);
+  display: flex;
+  justify-content: space-between;
+  border-right: 4px solid rgba(7, 255, 119, 0.664);
+}
+
+.delete-btn {
+  position: absolute;
+  left: -17px;
+  border: none;
+  background-color: red;
+  padding: 5px;
+  opacity: 0;
+  /* transform: translateX(5px); */
+}
+
+.plus:hover .delete-btn {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.minus:hover .delete-btn {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.edit-btn {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}

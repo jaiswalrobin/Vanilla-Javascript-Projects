@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Expense Manager</title>
+  </head>
+  <body>
+    <h3>Expense Tracker</h3>
+
+    <div class="container">
+      <div class="balance-container">
+        <div class="balance" id="balance">
+          <h4>Your Balance</h4>
+          <h3 class="actual-balance" id="actual-balance">$00.00</h3>
+        </div>
+        <div class="income-box" id="income-box">
+          <div class="net-income" id="net-income">
+            <p>INCOME</p>
+            <p class="income-came" id="income-came">$90.00</p>
+          </div>
+          <div class="net-expense" id="net-expense">
+            <p>EXPENSE</p>
+            <p class="income-gone" id="income-gone">$45.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="history" id="history">
+        <p>History</p>
+        <hr />
+        <div class="transaction-type" id="transaction-type"></div>
+      </div>
+      <p>Add new transaction</p>
+      <hr />
+
+      <form action="#" class="transaction-container" id="transaction-container">
+        <label for="transaction-box">Text</label>
+        <input
+          type="text"
+          id="transaction-box"
+          placeholder="Enter text here..."
+        />
+        <label for="transaction-value">Amount </label>
+        <p>( negative - expense, positive - income )</p>
+        <input
+          type="text"
+          id="transaction-value"
+          placeholder="Enter amount.."
+        />
+        <button id="transaction-btn" class="transaction-btn">
+          Add transaction
+        </button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
