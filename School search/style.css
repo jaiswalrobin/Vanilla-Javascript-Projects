@@ -1,0 +1,257 @@
+:root {
+  --primary-color: #d2f0ee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  background-color: var(--primary-color) !important;
+}
+
+.navbar {
+  box-shadow: 0 3px 2px 1px rgb(0 0 0 / 20%);
+  padding: 0.7rem 1rem !important;
+  background: rgba(128, 255, 0, 0.534);
+}
+
+.search-bar {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0 4px 0;
+}
+#search {
+  width: 50vw;
+  margin-right: 5px;
+  padding: 5px 30px 5px 30px;
+  font-size: 23px;
+  border-radius: 20px;
+  border: 0;
+}
+#search:focus {
+  outline: none;
+}
+
+.navigation h1 {
+  cursor: pointer;
+  margin-left: 50px;
+  color: #fff;
+  font-size: 23px;
+}
+
+#title {
+  text-align: center;
+  padding: 30px;
+  box-shadow: 2px 5px 3px 3px rgb(0 0 0 / 10%);
+  background: #fff;
+  margin: 50px auto;
+  border-radius: 20px;
+  color: #333333d9;
+}
+
+.card img {
+  height: 20em;
+  border-radius: 5px;
+  width: 100%;
+}
+.card {
+  margin: 0.53em;
+}
+
+.school-info-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.navbar-header {
+  position: relative;
+}
+.side-navbar-mob {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  color: white;
+  height: 100vh;
+  background: #33336b;
+  width: 270px;
+  transform: translateX(-100%);
+  transition: 0.2s ease-in-out;
+  left: 0;
+}
+.side-navbar-mob.toggle {
+  transform: translateX(0%);
+  transition: 0.4s linear;
+}
+
+.side-navbar-mob ul {
+  position: absolute;
+  list-style-type: none;
+  width: 100%;
+  top: 120px;
+}
+
+.side-navbar-mob ul li {
+  padding: 20px;
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+
+  font-size: 20px;
+}
+
+.side-navbar-mob ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+.side-navbar ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.side-navbar-mob ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.ham-nav {
+  opacity: 0;
+  right: 85px;
+  top: 13px;
+  z-index: 10;
+  position: absolute;
+  cursor: pointer;
+}
+.ham-nav div {
+  border-bottom: 2px solid #fff;
+  z-index: 10;
+  width: 26px;
+  height: 7px;
+}
+.card h4 a:hover {
+  cursor: pointer;
+  color: tomato;
+}
+.card h4 a {
+  color: #333333d9;
+}
+
+.filter-btn-container button {
+  margin-left: 7px;
+}
+
+.filter-side-navbar {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  color: white;
+  height: 100vh;
+  background: #333333d9;
+  width: 335px;
+  transform: translateX(100%);
+  transition: 0.2s ease-in-out;
+  right: 0;
+}
+.filter-side-navbar.toggle {
+  transform: translateX(0%);
+  transition: 0.4s linear;
+}
+
+.filter-side-navbar ul {
+  position: absolute;
+  list-style-type: none;
+  width: 100%;
+  top: 120px;
+}
+
+.filter-side-navbar ul li {
+  padding: 20px;
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  font-size: 20px;
+}
+.filter-side-navbar ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+.filter-item {
+  cursor: pointer;
+}
+.sort-btn {
+  margin-left: 5px;
+}
+
+.autosuggest {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.navbar-part {
+  width: 200px;
+  margin-right: 5px;
+  justify-content: space-between;
+  display: flex;
+  color: #fff;
+}
+.navbar-part h1 {
+  cursor: pointer;
+  font-size: 23px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .search-bar {
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .btn-container {
+    display: flex;
+  }
+  #search {
+    width: 70vw;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .navbar-part {
+    display: none;
+  }
+  .btn-container .btn-secondary {
+    font-size: 10px;
+  }
+  .card img {
+    height: 14em;
+  }
+  #title {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+  .side-navbar-mob {
+    width: 200px;
+  }
+  .ham-nav {
+    opacity: 1;
+    right: 18px;
+  }
+  .navigation h1 {
+    margin-left: 6px;
+  }
+  .filter-side-navbar {
+    width: 200px;
+  }
+  .autosuggest {
+    width: 90vw;
+  }
+  .school-desc {
+    display: none;
+  }
+}
